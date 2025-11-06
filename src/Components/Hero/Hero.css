@@ -1,0 +1,223 @@
+.hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero div[data-tilt] {
+    margin-top: 80px;
+    display: inline-block;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    overflow: hidden;
+    animation: idle-float 3s ease-in-out infinite;
+}
+
+.hero div[data-tilt]:hover {
+    animation: none;
+}
+
+.hero img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.hero-intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #3F4A4C;
+    padding: 20px;
+    border: solid #BFC7D5 5px;
+    border-radius: 20px;
+    width: 40%;
+    margin-top: 0;
+}
+
+.hero-intro h1 {
+    text-align: center;
+    width: 90%;
+    font-size: 65px;
+    font-weight: 500;
+    color: #FDFDFD;
+    text-shadow: 0px 4px #000000;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FDFDFD;
+    padding: 20px;
+    border-radius: 15px;
+    width: 97%;
+}
+
+.hero-content h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.hero-resume {
+    background-color: #7B559C;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+    width: 40%;
+}
+
+.hero-resume:hover {
+    background-color: #4e3663;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hero-resume h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: #FDFDFD;
+    text-shadow: 0px 4px #000000;
+}
+
+/* .yellow {
+    color: #F5B244;
+} */
+
+.blue {
+    color: #0093FF;
+}
+
+.red {
+    color: #FF4C40;
+}
+
+.hero-intro p {
+    text-align: center;
+    font-size: 25px;
+}
+
+@keyframes idle-float {
+    0% {transform: translateY(0px) rotate(-2deg);}
+    50% {transform: translateY(0px) rotate(2deg);}
+    100% {transform: translateY(0px) rotate(-2deg);}
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-intro {
+        width: 60%;
+        padding: 15px;
+    }
+    
+    .hero-intro h1 {
+        font-size: 50px;
+    }
+    
+    .hero-content h2 {
+        font-size: 35px;
+    }
+    
+    .hero-resume {
+        width: 60%;
+    }
+    
+    .hero-resume h3 {
+        font-size: 28px;
+    }
+    
+    .hero-intro p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .hero div[data-tilt] {
+        margin-top: 40px;
+    }
+    
+    .hero-intro {
+        width: 85%;
+        padding: 15px;
+    }
+    
+    .hero-intro h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+    
+    .hero-content {
+        gap: 15px;
+        padding: 15px;
+        width: 95%;
+    }
+    
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    
+    .hero-resume {
+        width: 80%;
+    }
+    
+    .hero-resume h3 {
+        font-size: 22px;
+    }
+    
+    .hero-intro p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .hero div[data-tilt] {
+        margin-top: 30px;
+    }
+    
+    .hero-intro {
+        width: 95%;
+        padding: 12px;
+    }
+    
+    .hero-intro h1 {
+        font-size: 28px;
+    }
+    
+    .hero-content {
+        gap: 12px;
+        padding: 12px;
+        width: 98%;
+    }
+    
+    .hero-content h2 {
+        font-size: 22px;
+    }
+    
+    .hero-resume {
+        width: 90%;
+    }
+    
+    .hero-resume h3 {
+        font-size: 18px;
+    }
+    
+    .hero-intro p {
+        font-size: 16px;
+    }
+}

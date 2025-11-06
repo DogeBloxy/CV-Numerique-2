@@ -1,0 +1,135 @@
+.skills {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #FDFDFD;
+    background-color: #45A676;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.skills-decks {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding: 50px;
+}
+
+.deck-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.deck-content img {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px #d3d3d3;
+    transition: 0.3s;
+}
+
+.deck-content img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.deck-content p {
+    text-align: center;
+    padding: 15px;
+    background-color: #3F4A4C;
+    border: solid #BFC7D5 5px;
+    border-radius: 20px;
+    color: #FDFDFD;
+    text-shadow: 0px 4px #000000;
+    font-size: 30px;
+}
+
+.deck-content .selected {
+    color: #F5B244;
+}
+
+@media screen and (max-width: 1024px) {
+    .skills h2 {
+        font-size: 40px;
+        width: 50%;
+    }
+    
+    .skills-decks {
+        gap: 80px;
+        padding: 30px;
+    }
+    
+    .deck-content p {
+        font-size: 25px;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .skills h2 {
+        font-size: 30px;
+        width: 70%;
+        padding: 12px;
+    }
+    
+    .skills-decks {
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    .deck-content img {
+        max-width: 120px;
+        height: auto;
+    }
+    
+    .deck-content p {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills {
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .skills h2 {
+        font-size: 24px;
+        width: 85%;
+        padding: 10px;
+    }
+    
+    .skills-decks {
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .deck-content img {
+        max-width: 100px;
+    }
+    
+    .deck-content p {
+        font-size: 18px;
+        padding: 8px;
+    }
+}

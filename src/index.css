@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes idle-float {
+    0% {transform: translateY(0px) rotate(-2deg);}
+    50% {transform: translateY(0px) rotate(2deg);}
+    100% {transform: translateY(0px) rotate(-2deg);}
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+}

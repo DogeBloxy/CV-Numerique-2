@@ -1,0 +1,37 @@
+{
+  "app": {
+    "musicOn":"Lancer la musique",
+    "musicOff":"Arrêter la musique"
+  },
+  "navbar": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Me contacter"
+  },
+  "hero": {
+    "title": "Tiago Labro",
+    "subtitle": "Développeur <blue>front-end</blue> et <red>back-end</red> en France.",
+    "description": "Je suis passionné d'informatique depuis le collège. Mon objectif est de faire en sorte de créer la forme, le fond ainsi qu'animer des projets comme des sites web ou des applications à partir de plusieurs langages. Mon rêve est de créer mon <i>propre jeu vidéo</i>.",
+    "resume": "Voir mon CV"
+  },
+  "skills": {
+    "title": "DECKS DE COMPÉTENCES",
+    "frontend": "Deck Front-End",
+    "backend": "Deck Back-End",
+    "other": "Deck Autres"
+  },
+  "projects": {
+    "title": "PROJETS",
+    "bonappetit": "Bon Appétit | HTML/CSS JavaScript",
+    "allomovies": "Allo-Movies | HTML/CSS JavaScript/Vue.JS",
+    "shifumi": "Shifumi Noël | HTML/CSS JavaScript",
+    "samusocial": "SamuSocialParis | HTML/CSS JavaScript",
+    "popcornflix": "PopCornFlix | React",
+    "bloxyday": "Bloxy's Day | RPG In A Box",
+    "download": "Disponible sur Windows, Mac et Linux !"
+  },
+  "contact": {
+    "title": "CONTACT"
+  }
+}

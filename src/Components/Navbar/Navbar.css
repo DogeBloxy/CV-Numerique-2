@@ -1,0 +1,188 @@
+.navbar {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 350px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 25px;
+}
+
+.navbar-item {
+    cursor: pointer;
+    padding: 20px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0px 8px rgb(139, 139, 139);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.navbar-item:hover {
+    transform: translateY(4px);
+    box-shadow: 0px 4px rgb(139, 139, 139);
+    background-color: rgb(209, 209, 209);
+    transition: 0.5s;
+}
+
+.navbar-contact {
+    padding: 20px 40px;
+    border-radius:15px;
+    background-color: rgb(255, 166, 0);
+    box-shadow: 0px 8px rgb(182, 118, 0);
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar-contact:hover {
+    transform: translateY(4px);
+    background-color: rgb(231, 150, 0);
+    box-shadow: 0px 4px rgb(182, 118, 0);
+    transition: 0.5s;
+}
+
+.navbar-lang {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-lang button {
+    cursor: pointer;
+    padding: 20px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0px 8px rgb(139, 139, 139);
+    color: #000000;
+    border-radius: 15px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.navbar-lang button:hover {
+    transform: translateY(4px);
+    box-shadow: 0px 4px rgb(139, 139, 139);
+    background-color: rgb(209, 209, 209);
+    transition: 0.5s;
+}
+
+.navbar-lang .selected {
+    color: #ff9d00;
+}
+
+@media screen and (max-width: 1640px) {
+    .navbar {
+        margin: 20px 150px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        margin: 20px 90px;
+    }
+    
+    .navbar-menu {
+        gap: 30px;
+        font-size: 20px;
+    }
+    
+    .navbar-contact {
+        font-size: 22px;
+        padding: 20px 30px;
+    }
+    
+    .navbar-lang {
+        gap: 15px;
+    }
+
+    .navbar-lang button {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .navbar {
+        margin: 15px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    }
+    
+    .navbar-item {
+        padding: 15px 25px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navbar-contact {
+        font-size: 20px;
+        padding: 15px 25px;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .navbar-lang {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-lang button {
+        font-size: 16px;
+        padding: 10px 15px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        margin: 10px 15px;
+    }
+    
+    .navbar-menu {
+        font-size: 16px;
+        gap: 10px;
+    }
+    
+    .navbar-item {
+        padding: 12px 20px;
+    }
+    
+    .navbar-contact {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+    
+    .navbar-lang {
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 8px;
+    }
+
+    .navbar-lang button {
+        font-size: 14px;
+        padding: 8px 10px;
+        width: 32px;
+    }
+}

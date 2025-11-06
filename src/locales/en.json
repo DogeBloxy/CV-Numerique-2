@@ -1,0 +1,37 @@
+{
+  "app": {
+    "musicOn":"Start the music",
+    "musicOff":"Stop the music"
+  },
+  "navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact me"
+  },
+  "hero": {
+    "title": "Tiago Labro",
+    "subtitle": "<blue>Front-end</blue> and <red>back-end</red> developer in France.",
+    "description": "I've always been fond of Computer science since i was in middle school. My ambition is to create both on the form and the substance, but also animate projects, such as websites or apps, using various languages. My dream is to create my own video game.",
+    "resume": "See my resume"
+  },
+  "skills": {
+    "title": "SKILLS DECKS",
+    "frontend": "Front-End Deck",
+    "backend": "Back-End Deck",
+    "other": "Other Deck"
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "bonappetit": "Bon Appétit | HTML/CSS JavaScript",
+    "allomovies": "Allo-Movies | HTML/CSS JavaScript/Vue.JS",
+    "shifumi": "Shifumi Noël | HTML/CSS JavaScript",
+    "samusocial": "SamuSocialParis | HTML/CSS JavaScript",
+    "popcornflix": "PopCornFlix | React",
+    "bloxyday": "Bloxy's Day | RPG In A Box",
+    "download": "Available on Windows, Mac and Linux!"
+  },
+  "contact": {
+    "title": "CONTACT"
+  }
+}
