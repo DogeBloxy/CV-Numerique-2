@@ -1,12 +1,84 @@
-# React + Vite
+# CV Numérique — Thème Balatro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un portfolio / CV numérique construit avec React + Vite, inspiré du thème visuel et ludique du jeu vidéo "Balatro".
 
-Currently, two official plugins are available:
+Ce dépôt contient la version front-end (vanille React + Vite) de mon CV interactif : cartes, decks, sections projets/compétences/contact et assets (images, sons, PDF) organisés pour ressembler à l'univers Balatro.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Ce que contient ce dépôt
 
-## Expanding the ESLint configuration
+- Stack : React (JSX), Vite pour le dev rapide et le bundling.
+- Structure principale : composants réutilisables dans `src/Components`, pages et points d'entrée dans `src`, assets dans `src/assets` et contenus statiques dans `public/`.
+- Thème/ressources Balatro : les composants présents dans `Reactbits/Balatro/` et les styles associés permettent de reprendre l'esthétique du jeu.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Prérequis
+
+- Node.js (LTS recommandée, par ex. 18+)
+- npm, yarn ou pnpm
+
+## Installation (PowerShell)
+
+Ouvrir un terminal à la racine `portfolio/` et lancer :
+
+```powershell
+npm install
+# ou
+# yarn install
+```
+
+## Développement (mode HMR)
+
+Lancer le serveur de développement :
+
+```powershell
+npm run dev
+# ou
+# yarn dev
+```
+
+Ensuite ouvrir http://localhost:5173/ (ou l'URL indiquée par Vite).
+
+## Build et preview
+
+Générer la version optimisée :
+
+```powershell
+npm run build
+
+# pour prévisualiser la build produite :
+npm run preview
+```
+
+## Déploiement
+
+Tu peux déployer la build sur des services statiques comme Netlify, Vercel ou GitHub Pages. Pour Vercel/Netlify, connecte simplement le repo et sélectionne `npm run build` comme commande de build et `dist/` comme dossier de sortie.
+
+## Structure importante
+
+- `index.html` — page d'entrée pour Vite
+- `src/main.jsx` — point d'entrée React
+- `src/App.jsx` — composant racine
+- `src/Components/` — composants réutilisables (Navbar, Hero, Decks, Contact, etc.)
+- `Reactbits/Balatro/` — éléments spécifiques au thème Balatro (styles et composants)
+- `src/assets/` — images, sons, PDF utilisés dans le CV
+- `public/` — fichiers statiques servis tels quels
+
+## Personnalisation
+
+- Modifier les textes (locales) : `src/locales/fr.json` et `src/locales/en.json`.
+- Modifier les images/sons : déposer de nouveaux fichiers dans `src/assets/img` ou `src/assets/mp3` et mettre à jour les imports.
+- Thèmes/styles : les fichiers CSS pour chaque composant sont dans leurs dossiers respectifs (`.css`).
+
+## Contrat rapide (inputs / outputs)
+
+- Input : fichiers sources React (JSX/CSS) + assets
+- Output : bundle statique optimisé dans `dist/` après `npm run build`
+- Modes d'erreur communs : assets manquants (chemins relatifs), erreurs de dépendances (exécuter `npm install`), problèmes de version Node (utiliser LTS)
+
+## Remerciements et crédits
+
+- Thème visuel inspiré de "Balatro" — éléments graphiques et comportement adaptés pour donner un style ludique au CV.
+- Certains assets (images, icônes, polices) peuvent être soumis à des licences — vérifier les fichiers dans `src/assets` et `public/` pour les crédits spécifiques.
+
+## Contact
+
+Pour toute question ou correction : ajoutez une issue ou contacte-moi via la section Contact du site (ou précise ton mode de contact préféré dans le repo).
