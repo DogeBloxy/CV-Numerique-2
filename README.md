@@ -76,9 +76,9 @@ Tu peux déployer la build sur des services statiques comme Netlify, Vercel ou G
 
 ## Remerciements et crédits
 
-- Thème visuel inspiré de "Balatro" — éléments graphiques et comportement adaptés pour donner un style ludique au CV.
+- Thème visuel inspiré de "Balatro" jeu développé par LocalThunk et édité par Playstack — éléments graphiques et comportement adaptés pour donner un style ludique au CV.
 - Certains assets (images, icônes, polices) peuvent être soumis à des licences — vérifier les fichiers dans `src/assets` et `public/` pour les crédits spécifiques.
 
 ## Contact
 
-Pour toute question ou correction : ajoutez une issue ou contacte-moi via la section Contact du site (ou précise ton mode de contact préféré dans le repo).
+Pour toute question ou correction : ajoutez une issue ou contacte-moi via la section Contact du site.
