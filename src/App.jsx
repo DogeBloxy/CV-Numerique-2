@@ -60,7 +60,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <p className='credits'>© 2025 Tiago LABRO. Tous droits réservés.</p>
+        <p className='credits'>© 2026 Tiago LABRO. Tous droits réservés.</p>
       </div>
     </div>
   )
