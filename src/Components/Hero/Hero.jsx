@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import VanillaTilt from 'vanilla-tilt'
 import TiagoJoker from '../../assets/img/cards/tiago-joker.png'
-import CV from '../../assets/pdf/cv-alternance-tiago-labro.pdf'
 import './Hero.css'
 import { useTranslation, Trans } from 'react-i18next'
 
@@ -37,7 +36,7 @@ function Hero() {
                     <h2><Trans i18nKey="hero.subtitle" components={{blue: <span className='blue' />, red: <span className='red' />}}></Trans></h2>
                     <p><Trans i18nKey="hero.description"><i></i></Trans></p>
                 </div>
-                <div className='hero-resume'><h3><a href={CV} target='_blank'>{t('hero.resume')}</a></h3></div>
+                <div className='hero-resume'><h3><a href='https://dogebloxy.github.io/interactive-resume/' target='_blank'>{t('hero.resume')}</a></h3></div>
             </div>
             
         </div>
